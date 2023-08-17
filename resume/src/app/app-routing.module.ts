@@ -1,7 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ResumeScreenComponent } from './resume-screen/resume-screen.component';
+import { HomepageScreenComponent } from './homepage-screen/homepage-screen.component';
+import { ProjectsScreenComponent } from './projects-screen/projects-screen.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: HomepageScreenComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'cv',
+    component: ResumeScreenComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'projects',
+    component: ProjectsScreenComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: '**',
+    component: HomepageScreenComponent,
+    pathMatch: 'full',
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
