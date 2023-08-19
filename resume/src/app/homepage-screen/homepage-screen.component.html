@@ -1,11 +1,11 @@
 <main class="p-5 max-w-5xl ml-auto mr-auto">
-    <div class="grid place-items-center gap-5 lg:grid-cols-5">
+    <div class="grid gap-5 grid-cols-5">
         <!-- Left Side -->
-        <div class="space-y-5 lg:col-span-2">
+        <div class="space-y-5 col-span-2">
             <img src="assets/cv_tatjana.jpg" alt="Avatar" class="rounded-lg">
         </div><!-- Left Side -->
   
-        <div class="space-y-5 lg:col-span-3"><!-- Right Side -->
+        <div class="space-y-5 col-span-3"><!-- Right Side -->
             <div>
                 <h2 class="text-5xl font-semibold mb-1.5 pt-10">Tatjana Meier</h2>
                 <p class="pt-5 text-xl">Consultant, Software Engineer and passionate about AI</p>
@@ -15,10 +15,10 @@
 </main>
 
 <div class="bg-gray antialiased">
-    <div class="grid gap-5 lg:grid-cols-3 p-5 max-w-5xl ml-auto mr-auto">
+    <div class="grid gap-5 md:grid-cols-3 p-5 max-w-5xl ml-auto mr-auto">
         <div class="space-y-5"><!-- Left Side -->
             <a routerLink="/cv">
-                <app-preview-card 
+                <app-preview-card
                     [imagePath]="'assets/briefcase.jpg'" 
                     [description]="'Learn about my skills and job history'"></app-preview-card>
             </a>
