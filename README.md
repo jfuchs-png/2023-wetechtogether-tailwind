@@ -37,3 +37,12 @@ npm install
 ng serve
 ```
 This will build and serve your app, which will be hosted on http://localhost:4200
+
+## Stretch goal: deploy your App 
+
+We use GitHub pages to deploy the applications. This is the tutorial: https://medium.com/tech-insights/how-to-deploy-angular-apps-to-github-pages-gh-pages-896c4e10f9b4
+
+1. Fork the repository to your own GitHub profile
+2. Follow the tutorial in the link above. When you build the app (`ng build --prod --base-href "https://GithubUserName.github.io/GithubRepoName/"` in the tutorial), remove the `--prod` config.
+
+The first deployment can take a while. Subsequent deployments usually only take a couple of seconds.
