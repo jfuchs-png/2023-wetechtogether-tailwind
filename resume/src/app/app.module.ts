@@ -12,7 +12,6 @@ import { ExperienceCardComponent } from './experience-card/experience-card.compo
 import { ResumeScreenComponent } from './resume-screen/resume-screen.component';
 import { HomepageScreenComponent } from './homepage-screen/homepage-screen.component';
 import { NavigationbarComponent } from './navigation-bar/navigation-bar.component';
-import { ProjectsScreenComponent } from './projects-screen/projects-screen.component';
 import { PreviewCardComponent } from './preview-card/preview-card.component';
 // import { EducationCardComponent } from './education-card/education-card.component';
 
@@ -28,7 +27,6 @@ import { PreviewCardComponent } from './preview-card/preview-card.component';
     ResumeScreenComponent,
     HomepageScreenComponent,
     NavigationbarComponent,
-    ProjectsScreenComponent,
     PreviewCardComponent,
     // EducationCardComponent,
   ],

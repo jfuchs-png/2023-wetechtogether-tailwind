@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",],
@@ -13,7 +15,10 @@ module.exports = {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
-      'white': '#fafafa'
+      'white': '#fafafa',
+      'indigo': colors.indigo,
+      'lime': colors.lime,
+      'black': colors.black
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

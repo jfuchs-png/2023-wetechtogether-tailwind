@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ResumeScreenComponent } from './resume-screen/resume-screen.component';
 import { HomepageScreenComponent } from './homepage-screen/homepage-screen.component';
-import { ProjectsScreenComponent } from './projects-screen/projects-screen.component';
 
 const routes: Routes = [
   {
@@ -13,11 +12,6 @@ const routes: Routes = [
   {
     path: 'cv',
     component: ResumeScreenComponent,
-    pathMatch: 'full',
-  },
-  {
-    path: 'projects',
-    component: ProjectsScreenComponent,
     pathMatch: 'full',
   },
   {

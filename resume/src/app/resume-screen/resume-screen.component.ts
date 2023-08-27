@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class ResumeScreenComponent {
   title = 'resume';
-  progList = ['Java', 'Kotlin', 'Dart', 'Python']
+  progList = ['Java', 'Angular', 'Azure', 'Python']
 }

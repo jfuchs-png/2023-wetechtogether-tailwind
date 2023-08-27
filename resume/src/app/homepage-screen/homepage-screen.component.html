@@ -1,43 +1,43 @@
-<main class="p-5 max-w-5xl ml-auto mr-auto">
-    <div class="grid gap-5 grid-cols-5">
+<main class="flex flex-col justify-between p-5 ml-auto mr-auto max-w-5xl">
+    <div class="grid gap-5 grid-cols-5 pt-5">
         <!-- Left Side -->
         <div class="space-y-5 col-span-2">
-            <img src="assets/cv_tatjana.jpg" alt="Avatar" class="rounded-lg">
+            <img src="assets/cv_dominique.jpeg" alt="Avatar" class="rounded-lg">
         </div><!-- Left Side -->
   
         <div class="space-y-5 col-span-3"><!-- Right Side -->
             <div>
-                <h2 class="text-5xl font-semibold mb-1.5 pt-10">Tatjana Meier</h2>
-                <p class="pt-5 text-xl">Consultant, Software Engineer and passionate about AI</p>
+                <h2 class="text-5xl font-semibold mb-1.5 pt-10 text-indigo-950">Dominique Heyn</h2>
+                <p class="pt-5 text-xl text-indigo-950">Consultant and Full-stack Software Developer</p>
             </div>
         </div><!-- Right Side -->
     </div>
+
+    <div class="antialiased bottom-0 absolute pb-5">
+        <div class="grid gap-5 md:grid-cols-3 p-5 max-w-5xl ml-auto mr-auto">
+            <div class="space-y-5"><!-- Left Side -->
+                <a routerLink="/cv">
+                    <app-preview-card
+                        [imagePath]="'assets/briefcase.jpg'" 
+                        [description]="'Learn about my skills and job history'"></app-preview-card>
+                </a>
+            </div><!-- Left Side -->
+    
+            <div class="space-y-5"><!-- Middle -->
+                <a href="https://github.com/DominiqueHeyn" target="_blank">
+                    <app-preview-card 
+                        [imagePath]="'assets/project.jpg'" 
+                        [description]="'Visit my GitHub profile'"></app-preview-card>
+                </a>
+            </div><!-- Middle -->
+    
+            <div class="space-y-5"><!-- Right Side -->
+                <a href="https://ipt.ch/de/impuls/das-bff-der-leim-der-backend-und-frontend-in-cloud-native-umgebungen-zusammenhal"  target="_blank">
+                    <app-preview-card 
+                        [imagePath]="'assets/blog.jpg'" 
+                        [description]="'Read my latest blog'"></app-preview-card>
+                </a>
+            </div><!-- Right Side -->
+        </div>
+    </div>    
 </main>
-
-<div class="bg-gray antialiased">
-    <div class="grid gap-5 md:grid-cols-3 p-5 max-w-5xl ml-auto mr-auto">
-        <div class="space-y-5"><!-- Left Side -->
-            <a routerLink="/cv">
-                <app-preview-card
-                    [imagePath]="'assets/briefcase.jpg'" 
-                    [description]="'Learn about my skills and job history'"></app-preview-card>
-            </a>
-        </div><!-- Left Side -->
-
-        <div class="space-y-5"><!-- Middle -->
-            <a routerLink="/projects">
-                <app-preview-card 
-                    [imagePath]="'assets/project.jpg'" 
-                    [description]="'Dive into my latest projects'"></app-preview-card>
-            </a>
-        </div><!-- Middle -->
-
-        <div class="space-y-5"><!-- Right Side -->
-            <a href="https://ipt.ch/de/impuls/">
-                <app-preview-card 
-                    [imagePath]="'assets/blog.jpg'" 
-                    [description]="'Visit my company\'s blog'"></app-preview-card>
-            </a>
-        </div><!-- Right Side -->
-    </div>
-</div>
