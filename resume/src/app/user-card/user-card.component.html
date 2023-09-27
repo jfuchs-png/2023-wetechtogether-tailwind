@@ -5,8 +5,8 @@
                                  class="top-[-40px] h-[80px] border-white rounded-lg border-2 absolute"></a>
     <div class="flex justify-between">
       <div class="text-xl font-semibold mb-1.5">{{name}}</div>
-      <app-badge class="text-right" [badgeName]="'Employed'"></app-badge>
+      <app-badge class="text-right" [badgeName]="currentAvailability"></app-badge>
     </div>
-    <div class="text-sm text-gray-400">Developer</div>
+    <div class="text-sm text-gray-400">{{job}}</div>
   </div>
 </div>
