@@ -1,0 +1,14 @@
+<main class="p-5 max-w-5xl ml-auto mr-auto">
+    <div class="grid gap-5 lg:grid-cols-3">
+        <div class="space-y-5"><!-- Left Side -->
+            <app-user-card [name]="'Tatjana Meier'"></app-user-card>
+            <app-language-card></app-language-card>
+            <app-skills-card [progList]="progList"></app-skills-card>
+        </div><!-- Left Side -->
+
+        <div class="space-y-5 lg:col-span-2"><!-- Right Side -->
+            <app-summary-card></app-summary-card>
+            <app-experience-card></app-experience-card>
+        </div><!-- Right Side -->
+    </div>
+</main>
