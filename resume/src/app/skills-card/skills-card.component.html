@@ -1,6 +1,11 @@
 <div class="shadow rounded-xl p-7 flow-root bg-white">
   <h2 class="text-xl font-semibold mb-1.5">Skills</h2>
-  <div class="flex flex-wrap">
-    <app-badge *ngFor="let prog of progList" [badgeName]="prog" class="mr-1"></app-badge>
+  <div class="flex flex-wrap gap-1">
+    <app-badge *ngFor="let prog of progList"
+               [badgeName]="prog" class="mr-1"></app-badge>
+    <app-badge [badgeName]="'Git'"
+               [backgroundColor]="'bg-purple'"></app-badge>
+    <app-badge [badgeName]="'Scrum'"
+               [backgroundColor]="'bg-purple'"></app-badge>
   </div>
 </div>
