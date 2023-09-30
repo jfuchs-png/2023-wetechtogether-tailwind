@@ -1,0 +1,19 @@
+<div class="shadow rounded-xl p-7 bg-white mb-5">
+    <h2 class="text-xl font-semibold mb-1.5">Education</h2>
+    <div *ngFor="let education of educationList">
+        <app-education-item
+                [imgSource]="education.imgSource"
+                [studies]="education.studies"
+                [school]="education.school"
+                [schoolLocation]="education.schoolLocation"
+                [workload]="education.workload"
+                [timespan]="education.timespan"
+                [educationDescription]="education.educationDescription"
+                [isLastItem]="education.isLastItem">
+        </app-education-item>
+    </div>
+
+</div>
+
+
+

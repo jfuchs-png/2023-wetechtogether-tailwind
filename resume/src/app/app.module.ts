@@ -14,6 +14,10 @@ import { HomepageScreenComponent } from './homepage-screen/homepage-screen.compo
 import { NavigationbarComponent } from './navigation-bar/navigation-bar.component';
 import { ProjectsScreenComponent } from './projects-screen/projects-screen.component';
 import { PreviewCardComponent } from './preview-card/preview-card.component';
+import { ExperienceItemComponent } from './experience-card/experience-item/experience-item.component';
+import { EducationCardComponent } from './education-card/education-card.component';
+import { EducationItemComponent } from './education-card/education-item/education-item.component';
+import { InformationCardComponent } from './information-card/information-card.component';
 // import { EducationCardComponent } from './education-card/education-card.component';
 
 @NgModule({
@@ -30,7 +34,10 @@ import { PreviewCardComponent } from './preview-card/preview-card.component';
     NavigationbarComponent,
     ProjectsScreenComponent,
     PreviewCardComponent,
-    // EducationCardComponent,
+    ExperienceItemComponent,
+    EducationCardComponent,
+    EducationItemComponent,
+    InformationCardComponent,
   ],
   imports: [
     BrowserModule,

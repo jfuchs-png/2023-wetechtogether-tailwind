@@ -1,21 +1,9 @@
 <div class="shadow rounded-xl p-7 block-section bg-white mb-5">
-  <h2 class="text-xl font-semibold mb-1.5">Information</h2>
+  <h2 class="text-xl font-semibold mb-1.5">Languages</h2>
   <div class="space-y-3">
-    <div class="flex justify-between">
-      <div>German</div>
-      <div class="font-medium text-right">C2</div>
-    </div>
-    <div class="flex justify-between">
-      <div>French</div>
-      <div class="font-medium text-right">C1</div>
-    </div>
-    <div class="flex justify-between">
-      <div>English</div>
-      <div class="font-medium text-right">C2</div>
-    </div>
-    <div class="flex justify-between">
-      <div>Italian</div>
-      <div class="font-medium text-right">B2</div>
+    <div *ngFor="let item of languages | keyvalue" class="flex justify-between">
+      <div>{{item.key}}</div>
+      <div class="font-medium text-right">{{item.value}}</div>
     </div>
   </div>
 </div>
