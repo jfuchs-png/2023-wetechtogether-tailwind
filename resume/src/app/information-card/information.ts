@@ -1,6 +1,7 @@
 export interface Information {
     birthday: string;
-    address: string;
+    addressStreet: string;
+    addressCity: string;
     phoneNumber: string;
     github: string;
 }

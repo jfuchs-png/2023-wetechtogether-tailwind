@@ -74,8 +74,9 @@ export class ResumeScreenComponent {
     ]
     information: Information = {
         birthday:'16 January 1994',
-        address: 'Street 7, 3008 Bern',
-        phoneNumber: '+41XX XXX XX XX',
+        addressStreet: 'Musterstrasse 7',
+        addressCity: '3008 Bern',
+        phoneNumber: '+4179 123 45 67',
         github:'shamalle'
     }
 }

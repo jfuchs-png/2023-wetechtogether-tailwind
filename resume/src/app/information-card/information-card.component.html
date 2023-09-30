@@ -10,7 +10,7 @@
             </div>
             <div class="font-medium text-right">{{information.birthday}}</div>
         </div>
-        <div *ngIf="information.address" class="flex justify-between">
+        <div *ngIf="information.addressStreet" class="flex justify-between items-start">
             <div class="flex items-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
@@ -21,7 +21,10 @@
                 </svg>
                 <div>Address</div>
             </div>
-            <div class="font-medium text-right">{{information.address}}</div>
+            <div class="flex-col">
+                <div class="font-medium text-right">{{information.addressStreet}}</div>
+                <div class="font-medium text-right">{{information.addressCity}}</div>
+            </div>
         </div>
         <div *ngIf="information.phoneNumber" class="flex justify-between">
             <div class="flex items-center space-x-2">
@@ -39,7 +42,7 @@
                 <div>Github</div>
             </div>
             <a href="https://github.com/shamalle">
-                <div class="font-medium text-right">{{information.github}}</div>
+                <div class="font-bold text-right">{{information.github}}</div>
             </a>
         </div>
     </div>
