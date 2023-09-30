@@ -6,13 +6,13 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./experience-item.component.css']
 })
 export class ExperienceItemComponent {
-  @Input() imgSource = '';
-  @Input() jobTitle = '';
-  @Input() employer = '';
-  @Input() employerLocation = '';
-  @Input() workload = '';
-  @Input() timespan = '';
-  @Input() jobDescription = '';
+  @Input() imgSource: string;
+  @Input() jobTitle: string;
+  @Input() employer: string;
+  @Input() employerLocation: string;
+  @Input() workload: string;
+  @Input() timespan: string;
+  @Input() jobDescription: string;
   @Input() isLastItem = false;
 
 }

@@ -7,5 +7,6 @@ import {Component, Input} from '@angular/core';
 })
 export class SkillsCardComponent {
   @Input() progList: string[] = [];
+  @Input() otherSkills: string[] = [];
 
 }

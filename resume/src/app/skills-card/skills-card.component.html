@@ -3,9 +3,9 @@
   <div class="flex flex-wrap gap-1">
     <app-badge *ngFor="let prog of progList"
                [badgeName]="prog" class="mr-1"></app-badge>
-    <app-badge [badgeName]="'Git'"
-               [backgroundColor]="'bg-purple'"></app-badge>
-    <app-badge [badgeName]="'Scrum'"
-               [backgroundColor]="'bg-purple'"></app-badge>
+    <app-badge *ngFor="let skill of otherSkills"
+               [badgeName]="skill"
+               [backgroundColor]="'bg-purple'" class="mr-1">
+    </app-badge>
   </div>
 </div>

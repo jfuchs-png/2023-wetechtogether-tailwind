@@ -6,14 +6,15 @@
                            [job]="'Software Engineer'"
                            [currentAvailability]="'Employed'"></app-user-card>
             <app-language-card [languages]="languages"></app-language-card>
-            <app-skills-card [progList]="progList"></app-skills-card>
+            <app-skills-card [progList]="progList"
+                             [otherSkills]="otherSkills"></app-skills-card>
         </div>
         <!-- Left Side -->
 
         <!-- Right Side -->
         <div class="space-y-5 lg:col-span-2">
             <app-summary-card [aboutMeText]="aboutMeText"></app-summary-card>
-            <app-experience-card></app-experience-card>
+            <app-experience-card [experiences]="experiences"></app-experience-card>
         </div>
         <!-- Right Side -->
     </div>
