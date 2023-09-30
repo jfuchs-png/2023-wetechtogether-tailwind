@@ -1,24 +1,5 @@
 <div class="shadow rounded-xl p-7 bg-white mb-5">
     <h2 class="text-xl font-semibold mb-1.5">Experience</h2>
-    <!--<app-experience-item
-            [imgSource]="'https://ipt.ch/static/img/logo_ipt.e41536c42e31.svg'"
-            [jobTitle]="'Consultant'"
-            [employer]="'ipt'"
-            [employerLocation]="'Zürich'"
-            [workload]="'Full Time'"
-            [timespan]="'June 2019 – Present'"
-            [jobDescription]="'Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem. Enim quo sed et sint aspernatur distinctio qui quam.'"
-    ></app-experience-item>
-    <app-experience-item
-            [isLastItem]="true"
-            [imgSource]="'/assets/postfinance.webp'"
-            [jobTitle]="'ICT Test Engineer'"
-            [employer]="'PostFinance'"
-            [employerLocation]="'Bern'"
-            [workload]="'Full Time'"
-            [timespan]="'April 2022 – July 2022'"
-            [jobDescription]="'Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem. Enim quo sed et sint aspernatur distinctio qui quam.'"
-    ></app-experience-item>-->
     <div *ngFor="let experience of experiences">
         <app-experience-item
                 [imgSource]="experience.imgSource"

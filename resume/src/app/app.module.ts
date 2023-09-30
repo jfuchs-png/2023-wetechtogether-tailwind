@@ -17,6 +17,7 @@ import { PreviewCardComponent } from './preview-card/preview-card.component';
 import { ExperienceItemComponent } from './experience-card/experience-item/experience-item.component';
 import { EducationCardComponent } from './education-card/education-card.component';
 import { EducationItemComponent } from './education-card/education-item/education-item.component';
+import { InformationCardComponent } from './information-card/information-card.component';
 // import { EducationCardComponent } from './education-card/education-card.component';
 
 @NgModule({
@@ -36,7 +37,7 @@ import { EducationItemComponent } from './education-card/education-item/educatio
     ExperienceItemComponent,
     EducationCardComponent,
     EducationItemComponent,
-    // EducationCardComponent,
+    InformationCardComponent,
   ],
   imports: [
     BrowserModule,

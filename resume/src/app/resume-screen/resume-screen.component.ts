@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {Experience} from "../experience-card/experience";
 import {Education} from "../education-card/education";
+import {Information} from "../information-card/information";
 
 @Component({
     selector: 'app-resume',
@@ -71,4 +72,10 @@ export class ResumeScreenComponent {
             isLastItem: true
         }
     ]
+    information: Information = {
+        birthday:'16 January 1994',
+        address: 'Street 7, 3008 Bern',
+        phoneNumber: '+41XX XXX XX XX',
+        github:'shamalle'
+    }
 }
