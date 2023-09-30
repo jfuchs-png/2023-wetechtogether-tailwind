@@ -15,6 +15,8 @@ import { NavigationbarComponent } from './navigation-bar/navigation-bar.componen
 import { ProjectsScreenComponent } from './projects-screen/projects-screen.component';
 import { PreviewCardComponent } from './preview-card/preview-card.component';
 import { ExperienceItemComponent } from './experience-card/experience-item/experience-item.component';
+import { EducationCardComponent } from './education-card/education-card.component';
+import { EducationItemComponent } from './education-card/education-item/education-item.component';
 // import { EducationCardComponent } from './education-card/education-card.component';
 
 @NgModule({
@@ -32,6 +34,8 @@ import { ExperienceItemComponent } from './experience-card/experience-item/exper
     ProjectsScreenComponent,
     PreviewCardComponent,
     ExperienceItemComponent,
+    EducationCardComponent,
+    EducationItemComponent,
     // EducationCardComponent,
   ],
   imports: [

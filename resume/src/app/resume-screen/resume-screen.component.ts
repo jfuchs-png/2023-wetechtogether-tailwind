@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Experience} from "../experience-card/experience";
+import {Education} from "../education-card/education";
 
 @Component({
     selector: 'app-resume',
@@ -37,4 +38,37 @@ export class ResumeScreenComponent {
             isLastItem: true
         }
         ]
+
+    education: Education[] = [
+        {
+            imgSource: '/assets/logo_unibe.svg',
+            studies: 'Master in Computer Sciences',
+            school: 'University of Bern',
+            schoolLocation: 'Bern, Fribourg',
+            workload: 'Full Time',
+            timespan: 'September 2019 – June 2022',
+            educationDescription: 'Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem. Enim quo sed et sint aspernatur distinctio qui quam.',
+            isLastItem: false
+        },
+        {
+            imgSource: '/assets/logo_unibe.svg',
+            studies: 'Bachelor in Mathematics',
+            school: 'University of Bern',
+            schoolLocation: 'Bern',
+            workload: 'Full Time',
+            timespan: 'September 2014 – June 2019',
+            educationDescription: 'Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem. Enim quo sed et sint aspernatur distinctio qui quam.',
+            isLastItem: false
+        },
+        {
+            imgSource: '/assets/ksz.jpeg',
+            studies: 'Matura',
+            school: 'Kantonsschule Zofingen',
+            schoolLocation: 'Zofingen',
+            workload: 'Full Time',
+            timespan: 'August 2010 - June 2013',
+            educationDescription: 'Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem. Enim quo sed et sint aspernatur distinctio qui quam.',
+            isLastItem: true
+        }
+    ]
 }
